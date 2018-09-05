@@ -1,0 +1,9 @@
+.scratch-dent {
+  &__item {
+    display: flex;
+
+    .price {
+      @extend %price-sm;
+    }
+  }
+}

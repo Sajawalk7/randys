@@ -1,0 +1,7 @@
+.locations-contacts {
+  img[alt="Locations Map"] {
+    @include media-breakpoint-down(sm) {
+      height: 250px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// Warehouse Availity Module
+.warehouse-availability {
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-bottom: 0;
+  }
+
+  &__list-item {
+    display: inline-block;
+    width: 60px;
+    padding: 5px 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    background-color: $gray-lighter;
+
+    &--not-active {
+      background-color: transparent;
+      border-color: $gray-lightest;
+
+      .warehouse-availability__list-icon {
+        color: $gray-lightest;
+      }
+
+      .warehouse-availability__list-name {
+        color: $gray-lightest;
+      }
+    }
+  }
+
+  &__list-icon {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__list-name {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

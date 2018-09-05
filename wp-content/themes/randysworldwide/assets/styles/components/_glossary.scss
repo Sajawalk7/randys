@@ -1,0 +1,81 @@
+.glossary-section {
+  text-align: center;
+
+  span {
+    position: relative;
+    display: inline-block;
+    margin: 0 8px 15px;
+    padding: 20px 0;
+    width: 12.3%;
+    border: 1px solid $gray-light;
+    border-radius: 2px;
+    background: $white;
+    text-align: center;
+    @extend .h3;
+    font-size: 21px;
+
+    @include media-breakpoint-up(sm) {
+      margin: 0 10px 15px;
+      width: 10.6%;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin: 0 7px 14px;
+      width: 5.7%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 10px 19px;
+      width: 5.5%;
+      font-size: 26px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 5.9%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 16px;
+      bottom: -8px;
+      left: 50%;
+      margin-left: -8px;
+      border-radius: 2px;
+      background-color: transparent;
+      transform: rotate(45deg);
+    }
+
+    &.children {
+      color: $brand-primary;
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+        cursor: pointer;
+      }
+    }
+
+    &.active {
+      color: $white;
+      background-color: $gray-darker;
+      border-color: $gray-darker;
+      transition: all 0s;
+
+      &:hover,
+      &:focus {
+        background-color: $gray-darker;
+        border-color: $gray-darker;
+      }
+
+      &::after {
+        background-color: $gray-darker;
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+button,
+.button {
+  display: inline-block;
+  padding: 18px 40px;
+  vertical-align: top;
+  box-shadow: 0 1px 2px 0 rgba($gray-darkest, 0.3);
+  background-color: $brand-primary;
+  border: 0;
+  border-radius: 2px;
+  color: $white;
+  @extend %open-sans;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: -0.08px;
+  line-height: 1.533em;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    background-color: $orange-dark;
+    color: $white;
+  }
+
+  &[disabled],
+  &[disabled]:hover {
+    background-color: $brand-primary;
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &--block {
+    display: block;
+    text-align: center;
+  }
+
+  &--ghost {
+    padding: 17px 39px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid $brand-primary;
+    color: $gray-dark;
+
+    &:hover,
+    &:focus {
+      background-color: $brand-primary;
+      color: $white;
+    }
+  }
+
+  &--short,
+  &--short-blue {
+    padding: 11px 40px 10px;
+  }
+
+  &--short-blue {
+    &:hover,
+    &:focus {
+      background-color: $blue-dark;
+    }
+  }
+
+  &--short-blue {
+    background-color: $brand-blue;
+
+    &[disabled] {
+      background-color: $brand-blue;
+
+      &:hover {
+        background-color: $brand-blue;
+      }
+    }
+  }
+
+  &--slim {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &--sm-height {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--full-width {
+    width: 100%;
+    text-align: center;
+  }
+
+  &--clear {
+    display: inline-block;
+    font-weight: 600;
+
+    &::after {
+      content: '\f057';
+      margin-left: 8px;
+      font-family: 'FontAwesome';
+      font-weight: normal;
+      font-size: 21px;
+      -webkit-font-smoothing: antialiased;
+      vertical-align: top;
+    }
+  }
+
+  &--calc {
+    display: inline-flex;
+    align-items: center;
+    height: 240px;
+    width: 100%;
+    padding: 30px 10px;
+    border-radius: 2px;
+    border: 1px solid $gray-light;
+    background-color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    transition: all 0.3s;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(sm) {
+      height: 315px;
+      padding: 40px 25px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 280px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 315px;
+    }
+
+    svg {
+      width: 75%;
+      margin-bottom: 15px;
+      transition: all 0.3s;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 25px;
+      }
+    }
+
+    span {
+      display: block;
+      padding: 15px 20px;
+      border-radius: 2px;
+      border: 2px solid rgba($brand-primary, 0);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $gray-darker;
+      color: $white;
+
+      svg * {
+        fill: $white;
+      }
+
+      span {
+        border: 2px solid $brand-primary;
+      }
+    }
+  }
+
+  &--icon {
+    font-size: 24px;
+  }
+}
+
+button.navbar-toggler {
+  padding: 15px;
+  height: 66px;
+  border-radius: 0;
+  box-shadow: none;
+  border-left: 1px solid $gray-light;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+
+  .line {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: $gray-darker;
+  }
+}
+
+.search-submit {
+  @extend .button;
+  @extend .button--short;
+}
+
+.pagination {
+  .page-numbers:not(.dots) {
+    @extend .button;
+    padding: 11px 0;
+    margin-bottom: 10px;
+    width: 29px;
+    text-align: center;
+    font-size: 14px;
+
+    @include media-breakpoint-up(sm) {
+      width: 49px;
+      font-size: 18px;
+    }
+
+    &.current {
+      background-color: $gray;
+    }
+  }
+
+  .page-numbers.dots {
+    display: inline-block;
+    padding-top: 11px;
+    width: 19px;
+    height: 49px;
+  }
+}

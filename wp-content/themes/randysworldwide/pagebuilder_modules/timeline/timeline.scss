@@ -1,0 +1,76 @@
+.timeline {
+  position: relative;
+
+  &__overlap {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    .slick-next,
+    .slick-prev {
+      top: 61%;
+
+      @include media-breakpoint-only(xs) {
+        top: 68%;
+      }
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+  }
+
+  .date {
+    @extend %date;
+    color: $brand-blue;
+    margin-bottom: 15px;
+  }
+
+  .type {
+    color: $white;
+  }
+
+  .timeline-slider {
+    width: 140%;
+    color: $white;
+
+    @include media-breakpoint-only(xs) {
+      width: inherit;
+      margin-left: 0;
+    }
+
+    &__slide {
+      padding: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 480px;
+      background-color: $gray-darker;
+
+      @include media-breakpoint-up(sm) {
+        height: 470px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        height: 440px;
+      }
+
+      .slide__background {
+        width: 100%;
+        height: 170px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-up(md) {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

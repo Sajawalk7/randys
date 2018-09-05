@@ -1,0 +1,121 @@
+{
+    "key": "group_58ed47426aaf5",
+    "title": "Warehouse Addresses",
+    "fields": [
+        {
+            "sub_fields": [
+                {
+                    "default_value": "",
+                    "maxlength": 2,
+                    "placeholder": "WA, CA, ect.",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_58ed475bf3e31",
+                    "label": "State Code",
+                    "name": "state_code",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_58ed4790f3e32",
+                    "label": "Address Line",
+                    "name": "address_line",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_58ed47bcf3e33",
+                    "label": "City",
+                    "name": "city",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_58ed47d1f3e34",
+                    "label": "Zip",
+                    "name": "zip",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_58ed474af3e30",
+            "label": "Warehouse Addresses",
+            "name": "warehouse_addresses",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "warehouse-addresses"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1492210787
+}

@@ -1,0 +1,172 @@
+.archive-product {
+  padding: 3rem 0;
+  border-top: 1px solid $gray-lighter;
+
+  &--alternate {
+    padding: 1rem 0;
+    border: 0;
+
+    .row {
+      margin: 0;
+    }
+
+    .archive-product__image-link::before {
+      width: 65px;
+      height: 65px;
+    }
+
+    .archive-product__number {
+      margin-bottom: 5px;
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 1.4em;
+
+      a {
+        display: inline;
+        max-height: 57px;
+        overflow: hidden;
+      }
+    }
+
+    .archive-product__title {
+      margin-bottom: 5px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .entry-summary {
+      font-size: 14px;
+    }
+
+    .wp-post-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border: 1px solid $gray-light;
+      background-color: $white;
+    }
+
+    .archive-product__permalink {
+      margin: 5px 0;
+    }
+
+    &.archive-product .added_to_cart {
+      margin-top: 10px;
+    }
+
+    .add_to_cart_button {
+      display: block;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+
+    .warehouse-availability__list-item {
+      &--not-active {
+        border-color: $gray-light;
+
+        .warehouse-availability__list-icon,
+        .warehouse-availability__list-name {
+          color: $gray-light;
+        }
+      }
+    }
+  }
+
+  &__alt-parts-title {
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  &__image-link {
+    display: block;
+    position: relative;
+
+    &--best-value::before,
+    &--best-seller::before,
+    &--best-warranty::before {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+    }
+
+    &--best-seller::before {
+      background-image: url('../images/product_flags_best_seller.svg');
+    }
+
+    &--best-value::before {
+      background-image: url('../images/product_flags_best_value.svg');
+    }
+
+    &--best-warranty::before {
+      background-image: url('../images/product_flags_best_warranty.svg');
+    }
+  }
+
+  &__number {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    @extend %product-title;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+    }
+  }
+
+  &__sku {
+    font-weight: bold;
+    color: $gray-darkest;
+
+    &--light {
+      display: inline;
+      padding-left: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+
+  &__permalink {
+    display: inline;
+  }
+
+  .added_to_cart {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .woocommerce-placeholder {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+}
+
+.post-type-archive-product {
+  .woocommerce-pagination {
+    display: none;
+  }
+}
+
+.load-more-products,
+.load-more-products__spinner {
+  display: none;
+}
+
+.load-more-products.button,
+.load-more-products.button:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid $brand-primary;
+  color: $gray-dark;
+
+  &:hover {
+    background-color: $brand-primary;
+    color: $white;
+  }
+}

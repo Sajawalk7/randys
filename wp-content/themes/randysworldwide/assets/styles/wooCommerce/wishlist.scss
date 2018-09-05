@@ -1,0 +1,31 @@
+.woocommerce-wishlist {
+  .wishlist-title {
+    position: relative;
+  }
+
+  .back {
+    position: absolute;
+    top: -45px;
+    right: 15px;
+  }
+
+  .wishlist_table {
+    tr td.product-thumbnail a img {
+      height: auto;
+    }
+
+    td {
+      text-align: left;
+    }
+
+    td.product-name {
+      width: 25%;
+    }
+
+    .old-price,
+    .old-price .woocommerce-Price-amount {
+      font-size: 17px;
+      color: $red;
+    }
+  }
+}

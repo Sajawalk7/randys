@@ -1,0 +1,172 @@
+.content-info {
+  padding: 4em 0;
+  background-color: $gray-darker;
+  color: $white;
+
+  &__wrapper {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  &__col-wrapper {
+
+    &::before {
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        right: 15px;
+        height: 100%;
+        width: 1px;
+        background: $white;
+        opacity: 0.1;
+        content: '';
+      }
+    }
+
+    &--last-item-desktop {
+      &::before {
+        @include media-breakpoint-up(lg) {
+          content: none;
+        }
+      }
+    }
+  }
+
+  &__mobile-divider {
+    margin-bottom: 30px;
+    border-bottom: 1px solid $gray-light;
+
+    @include media-breakpoint-up(lg) {
+      border-bottom: 0;
+    }
+  }
+
+  &__section-header {
+    margin-bottom: 10px;
+    @extend %main-nav;
+  }
+
+  &__brand {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 130px;
+    height: 115px;
+    float: left;
+    margin-right: 30px;
+    background-image: url('../images/RANDYS_logo_grey.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 124px 113px;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s opacity;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &__copyright {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    color: $gray-lighter;
+    opacity: 0.5;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
+
+  &__nav-list {
+    > li {
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: $white;
+
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+
+    .sub-menu {
+      padding-left: 0;
+      list-style: none;
+
+      a {
+        display: inline-block;
+        margin-bottom: 5px;
+        color: $gray-lighter;
+        @extend %sub-nav;
+
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+    }
+
+  }
+
+  &__social {
+    overflow: hidden;
+    margin-bottom: 0;
+
+    li {
+      float: left;
+      width: 50%;
+
+      @include media-breakpoint-up(lg) {
+        float: none;
+        width: auto;
+      }
+
+      a {
+        display: inline-flex;
+        margin: 10px 0;
+        align-items: center;
+        color: $gray-lighter;
+        @extend %sub-nav;
+
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+
+  &__icon.fa {
+    margin-right: 20px;
+    width: 32px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .flex-desktop-one-mobile-four {
+    @include flex-order(1);
+
+    @include media-breakpoint-up(lg) {
+      @include flex-order(4);
+    }
+  }
+
+  .flex-all-two {
+    @include flex-order(2);
+  }
+
+  .flex-all-three {
+    @include flex-order(3);
+  }
+
+  .flex-desktop-four-mobile-one {
+    @include flex-order(4);
+
+    @include media-breakpoint-up(lg) {
+      @include flex-order(1);
+    }
+  }
+}

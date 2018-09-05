@@ -1,0 +1,261 @@
+.woocommerce-page {
+  h1 {
+    @extend .h2;
+  }
+
+  table {
+    border: 0;
+
+    &.border-top {
+      border-top: 1px solid $gray-light;
+    }
+
+    tr {
+      background: transparent;
+    }
+
+    tr:first-child {
+      background: transparent;
+      color: $gray-darker;
+    }
+
+    tr:last-child {
+      border-bottom: 0;
+    }
+
+    td,
+    th {
+      background: transparent;
+      padding: 20px 0;
+      border: 0;
+    }
+  }
+
+  form.checkout,
+  form.login,
+  form.signup,
+  .woocommerce-MyAccount-content form {
+    label:not(.input-checkbox-label) {
+      display: block;
+    }
+
+    .form-row label {
+      display: inline-block;
+    }
+
+    .input-text {
+      width: 100%;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    .form-row {
+      width: calc(50% - 15px);
+
+      &.form-row-third {
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+          width: calc(33.3% - 20px);
+        }
+      }
+
+      &.form-row-first {
+        float: left;
+      }
+
+      &.form-row-middle {
+        float: left;
+
+        @include media-breakpoint-up(sm) {
+          margin: 0 30px;
+        }
+      }
+
+      &.form-row-last {
+        float: right;
+      }
+
+      &.form-row-wide,
+      &.notes {
+        width: 100%;
+        clear: both;
+      }
+    }
+
+    ul.radio-group {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    .woocommerce-billing-fields {
+      @include media-breakpoint-up(sm) {
+        padding-right: 15px;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-right: 35px;
+      }
+    }
+
+    .woocommerce-shipping-fields {
+      @include media-breakpoint-up(sm) {
+        padding-left: 15px;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-left: 35px;
+      }
+    }
+
+    .vehicle-info,
+    .coupon-form {
+      margin-bottom: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s;
+
+      &.active {
+        margin-bottom: 30px;
+        max-height: 450px;
+        transition: max-height 0.8s;
+      }
+    }
+  }
+
+  form.login,
+  form.signup {
+
+    @include media-breakpoint-up(md) {
+      height: 300px;
+
+      input[type="submit"] {
+        position: absolute;
+        bottom: 40px;
+        width: calc(100% - 80px);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 280px;
+    }
+  }
+}
+
+.price--lg {
+  .amount {
+    @extend %price-lg;
+  }
+}
+
+.price--sm {
+  .amount {
+    @extend %price-sm;
+  }
+}
+
+.price--xs {
+  .amount {
+    @extend %price-xs;
+  }
+}
+
+.woocommerce-Price-amount,
+.total {
+  @extend %price-sm;
+  color: $gray-darker;
+}
+
+.woocommerce-message,
+.woocommerce-error {
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.woocommerce-message {
+  display: flex;
+  align-items: center;
+  background-color: rgba($blue-dark, 0.10);
+  border-top: 4px solid $blue-dark;
+
+  &__alert-icon {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    color: $brand-primary;
+
+    &::before {
+      font-size: 32px;
+    }
+  }
+
+  .wc-forward {
+    min-width: 170px;
+    margin-right: 20px;
+    text-align: center;
+  }
+}
+
+.woocommerce-error {
+  > li {
+    padding: 15px;
+    background-color: rgba($brand-primary, 0.10);
+    border-top: 4px solid $brand-primary;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.out-of-stock-message {
+  margin-top: 10px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+tr.cart-discount,
+tr.cart-subtotal,
+tr.shipping,
+tr.tax-rate,
+tr.cart-shiping {
+  text-transform: uppercase;
+  @extend .h4;
+
+  th {
+    font-weight: 800;
+  }
+
+  .woocommerce-Price-amount {
+    @extend .h4;
+  }
+}
+
+tr.order-total {
+  @extend %total;
+  color: $gray-darker;
+
+  th,
+  .woocommerce-Price-amount {
+    font-weight: 800;
+  }
+}
+
+.page-builder-warp--has-filter {
+  > .section {
+    margin-top: -240px;
+    padding-top: 150px;
+  }
+
+  // Selects all but first .section
+  > .section ~ .section {
+    margin-top: auto;
+    padding-top: 50px;
+  }
+}

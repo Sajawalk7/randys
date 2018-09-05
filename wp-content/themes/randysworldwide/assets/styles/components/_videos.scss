@@ -1,0 +1,31 @@
+.inline-video {
+  position: relative;
+  height: 370px;
+  background-size: cover;
+  z-index: 0;
+
+  @include media-breakpoint-up(md) {
+    height: 670px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .inline-video__icon {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    display: block;
+    background-size: cover;
+    transition: 0.3s;
+    z-index: -1;
+  }
+}

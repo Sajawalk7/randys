@@ -1,0 +1,246 @@
+body {
+  font-size: 16px;
+  line-height: 1.633em;
+  color: $gray-dark;
+  @extend %open-sans;
+  font-weight: 600;
+  letter-spacing: -0.09px;
+  text-rendering: optimizelegibility;
+}
+
+.white {
+  color: $white;
+}
+
+.dark-gray {
+  color: $gray-darkest;
+}
+
+.orange {
+  color: $brand-primary;
+}
+
+a {
+  color: $brand-primary;
+  font-weight: 800;
+  letter-spacing: -0.46px;
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $orange-dark;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &.white {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+}
+
+.sm {
+  font-size: 14px;
+  letter-spacing: -0.08px;
+  line-height: 25px;
+
+  a {
+    text-transform: none;
+    letter-spacing: -0.4px;
+  }
+}
+
+.mega {
+  font-size: 12px;
+  font-weight: 600;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: $gray-darker;
+}
+
+h1,
+.h1 {
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: -1.94px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: -1.08px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 26px;
+  letter-spacing: -0.74px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 22px;
+  }
+
+  &.timeline-date {
+    font-size: 30px;
+    color: $brand-blue;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.51px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 16px;
+  }
+
+  &.names {
+    font-weight: 700;
+    text-transform: none;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+label,
+.label {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.07px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: -1.08px;
+
+  &--dark {
+    color: $gray-darker;
+  }
+
+  &--light {
+    color: $white;
+  }
+}
+
+%main-nav {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: -0.46px;
+}
+
+%dropdown {
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: -0.07px;
+
+  @include media-breakpoint-down(sm) {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+%sub-nav {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: -0.4px;
+}
+
+%product-title {
+  margin-top: 3rem;
+  font-size: 26px;
+  text-transform: none;
+}
+
+%price-lg {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.91px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
+}
+
+%price-sm {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.68px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
+}
+
+%price-xs {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.68px;
+}
+
+%total {
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+}
+
+%large_italic {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -0.15;
+  line-height: 1.3;
+
+  @include media-breakpoint-up(md) {
+    font-size: 26px;
+  }
+}
+
+%date {
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -0.74px;
+}

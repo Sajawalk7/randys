@@ -1,0 +1,71 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+        "scripts/calculators.js",
+        "scripts/diff-wizard.js",
+        "scripts/google-customer-review-badge.js"
+      ],
+      "main": true
+    },
+    "product-browsing.js": {
+      "files": [
+        "scripts/product-browsing.js"
+      ]
+    },
+    "products-filter.js": {
+      "files": [
+        "scripts/products-filter.js"
+      ]
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "admin.css": {
+      "files": [
+        "styles/admin.scss"
+      ]
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "jquery-form.js": {
+      "bower": ["jquery-form"]
+    },
+    "bootstrap3-typeahead.js": {
+      "bower": ["bootstrap3-typeahead"]
+    },
+    "downloadable-image.js": {
+      "files": [
+          "scripts/downloadable-images.js"
+      ]
+    },
+    "downloadable-product.js": {
+      "files": [
+        "scripts/downloadable-products.js"
+      ]
+    },
+    "custom-export.js": {
+      "files": [
+          "scripts/custom-export.js"
+      ]
+    },
+    "order-express.js": {
+      "files": [
+        "scripts/order-express.js"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "https://local.ringpinion.com"
+  }
+}

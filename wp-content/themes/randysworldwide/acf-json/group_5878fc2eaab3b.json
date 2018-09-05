@@ -1,0 +1,309 @@
+{
+    "key": "group_5878fc2eaab3b",
+    "title": "CTA Section",
+    "fields": [
+        {
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5878fc954a0ff",
+            "label": "CTA Module One",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_5878fc9a4a100",
+            "label": "CTA Module One Image",
+            "name": "cta_module_one_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "top": "Top",
+                "left": "Left"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_58790811d4012",
+            "label": "CTA Module One Image Position",
+            "name": "cta_module_one_image_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5878fc9e4a101",
+            "label": "CTA Module One Title",
+            "name": "cta_module_one_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "br",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_5878fca14a102",
+            "label": "CTA Module One Description",
+            "name": "cta_module_one_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_5878fca64a103",
+            "label": "CTA Module One Button Link",
+            "name": "cta_module_one_button_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5878fcaa4a104",
+            "label": "CTA Module One Button Label",
+            "name": "cta_module_one_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5878feb56105d",
+            "label": "CTA Module Two",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_5878feb96105e",
+            "label": "CTA Module Two Image",
+            "name": "cta_module_two_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "top": "Top",
+                "left": "Left"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_587909220406a",
+            "label": "CTA Module Two Image Position",
+            "name": "cta_module_two_image_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5878febc6105f",
+            "label": "CTA Module Two Title",
+            "name": "cta_module_two_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "br",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_5878febe61060",
+            "label": "CTA Module Two Description",
+            "name": "cta_module_two_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_5878ff0261061",
+            "label": "CTA Module Two Button Link",
+            "name": "cta_module_two_button_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5878ff0461062",
+            "label": "CTA Module Two Button Label",
+            "name": "cta_module_two_button_label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50%",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "10"
+            }
+        ]
+    ],
+    "menu_order": 999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1485983922
+}

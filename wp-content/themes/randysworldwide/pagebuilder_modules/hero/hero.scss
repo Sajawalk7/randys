@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $white;
+  color: $white;
+  height: 400px;
+  background-position: center center;
+
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+  }
+
+  @include media-breakpoint-up(md) {
+    background-repeat: no-repeat;
+  }
+
+  &--home {
+    display: block;
+    padding-top: 100px;
+    height: 480px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 160px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      max-width: 290px;
+      height: 60px;
+      opacity: 0.86;
+      background: url('../images/RANDYS_text_white.svg') no-repeat;
+
+      @include media-breakpoint-up(md) {
+        max-width: 442px;
+        height: 80px;
+      }
+    }
+  }
+
+  &--search {
+    .container {
+      position: relative;
+    }
+
+    .section-title {
+      font-size: 24px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 52px;
+      }
+    }
+  }
+
+  &--purple {
+    background-color: $purple;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &--rust {
+    background-color: $rust;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  &--texture-bg {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.1;
+      background-image: url('../images/blue-print.svg');
+      background-size: contain;
+      content: '';
+
+      @include media-breakpoint-up(md) {
+        background-size: cover;
+      }
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+    opacity: 0.9;
+  }
+
+  h1 {
+    padding: 0 10px;
+    font-family: 'antique_olive_nord_italic', 'Open Sans', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: $white;
+    opacity: 0.9;
+    letter-spacing: initial;
+
+    @include media-breakpoint-up(md) {
+      font-size: 48px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 68px;
+    }
+  }
+
+  .page-header {
+    height: 74px;
+  }
+}

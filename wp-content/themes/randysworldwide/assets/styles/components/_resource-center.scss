@@ -1,0 +1,115 @@
+.post-type-archive-resource-center,
+.search-results,
+.search-no-results {
+  .hero.hero--has-overlay {
+    .container {
+      position: relative;
+      width: 100%;
+
+      h1.section-title {
+        text-align: left;
+      }
+
+      button {
+        padding-left: 15px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.resource-category-search__reset {
+  display: none;
+  position: absolute;
+  bottom: -36px;
+  right: 23px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Category Reset button placement
+.resource-center-category {
+  position: relative;
+
+  &__reset {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-breakpoint-up(lg) {
+      bottom: -60px;
+    }
+  }
+}
+
+// Resource items container
+.resource-center {
+  &--is-loading {
+    .resource-center__container,
+    .resource-center__no-results {
+      display: none;
+    }
+
+    .resource-center__loading-state {
+      display: block;
+    }
+  }
+
+  &__count {
+    text-align: right;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  .facetwp-sort {
+    position: relative;
+    margin-top: 20px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+      float: right;
+    }
+
+    &::before {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: '\f078'; // fa-chevron-down
+      font-family: FontAwesome;
+      font-size: 18px;
+      color: $brand-primary;
+      z-index: 0;
+    }
+
+    .facetwp-sort-select {
+      width: 100%;
+      background-color: transparent;
+
+      @include media-breakpoint-up(md) {
+        width: 250px;
+      }
+    }
+  }
+
+  &__loading-state {
+    display: none;
+    margin: 50px auto 0;
+    width: 50px;
+    height: 50px;
+    border: 10px solid $gray;
+    border-top-color: $brand-primary;
+    border-radius: 50%;
+    animation: spin 1s infinite;
+  }
+
+  &__no-results {
+    display: none;
+  }
+}

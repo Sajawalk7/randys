@@ -1,0 +1,23 @@
+.blog-section {
+  article {
+    border-bottom: 1px solid $gray-light;
+  }
+}
+
+.pagination {
+  width: 100%;
+  text-align: center;
+
+  .page-numbers {
+    margin: 0 5px;
+    font-size: 18px;
+  }
+}
+
+.diff-wizard,
+.tax-product_cat {
+  .pagination {
+    display: none;
+    margin-top: 50px;
+  }
+}

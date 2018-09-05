@@ -1,0 +1,10 @@
+.archive-header {
+  &__section-title {
+    margin-right: 30px;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $gray-darkest;
+  }
+}

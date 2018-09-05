@@ -1,0 +1,50 @@
+.faq-section {
+  .accordion {
+    .card {
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+
+      .card-header {
+        padding: 0;
+        background-color: transparent;
+        box-shadow: 0;
+        border: 0;
+
+        a {
+          position: relative;
+          display: block;
+          padding: 40px;
+          color: $gray-darker;
+          background-color: $white;
+          border: 1px solid $gray-light;
+          border-radius: 2px;
+
+          &::after {
+            content: '\f068';
+            position: absolute;
+            top: 42%;
+            right: 30px;
+            font-family: 'FontAwesome';
+            color: $brand-primary;
+            font-size: 32px;
+
+            @include media-breakpoint-up(md) {
+              right: 40px;
+            }
+          }
+
+          &.collapsed {
+            &::after {
+              content: '\f067';
+            }
+          }
+        }
+      }
+
+      .card-block {
+        padding: 40px 40px 15px;
+      }
+    }
+  }
+}

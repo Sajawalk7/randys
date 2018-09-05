@@ -1,0 +1,147 @@
+// Any button, box or image has a 2px rounded corner.
+
+.alert {
+  border-radius: 2px;
+}
+
+.alert-warning {
+  background-color: rgba($brand-primary, 0.05);
+  border-color: rgba($brand-primary, 0.2);
+}
+
+.divider {
+  margin: 0 5px;
+}
+
+.center-align {
+  @include center-align;
+}
+
+.position-right {
+  position: relative;
+  right: 0;
+  top: 0;
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+
+    &--50 {
+      top: -50px;
+    }
+  }
+}
+
+.spinner {
+  @include spinner;
+
+  &--input {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    border: 7px solid $gray-light;
+    border-top-color: $brand-primary;
+    z-index: 1;
+  }
+}
+
+.text-circle {
+  position: relative;
+  margin-bottom: 30px;
+  display: block;
+  color: $white;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background: $gray-darkest;
+    z-index: -1;
+    content: '';
+  }
+}
+
+.hide {
+  display: none;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.wysiwyg-content {
+  img {
+    max-width: 100%;
+  }
+}
+
+.vertical-align-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-next,
+.slick-prev {
+  width: 45px;
+  height: 85px;
+  top: 36%;
+  transition: all 0.3s;
+  background-color: rgba($white, 0.5);
+  color: $gray-darker;
+  font-size: 65px;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 10;
+
+  &--bg-transparent {
+    background-color: transparent;
+  }
+
+  &::before {
+    content: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brand-primary;
+    background-color: rgba($white, 0.3);
+  }
+}
+
+.slick-next {
+  @include media-breakpoint-up(xs) {
+    right: -50px;
+  }
+
+  @include media-breakpoint-up(md) {
+    right: -48px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    right: -55px;
+  }
+}
+
+.slick-prev {
+  @include media-breakpoint-up(xs) {
+    left: -50px;
+  }
+
+  @include media-breakpoint-up(md) {
+    left: -48px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    left: -55px;
+  }
+}

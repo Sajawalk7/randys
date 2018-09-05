@@ -1,0 +1,32 @@
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #f06022;
+$orange-dark:           #bf400a;
+$brand-blue:            #2a94c6;
+$blue-dark:             #296da7;
+$blue-darker:           #0b3960;
+$purple:                #42197f;
+$tan:                   #d2d1aa;
+$rust:                  #8d401e;
+
+$white:                 #fff;
+$gray-lightest:         #f2efef;
+$gray-lighter:          #d9d8d8;
+$gray-light:            #d4d4d4;
+$gray:                  #9b9b9b;
+$gray-dark:             #606060;
+$gray-darker:           #333;
+$gray-darkest:          #1d1d1d;
+
+$red:                   #f00;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 750px,
+  lg: 970px,
+  xl: 1170px
+) !default;

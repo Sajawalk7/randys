@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border: 1px solid $gray-light;
+  border-bottom: 5px solid $brand-primary;
+
+  tr:first-child {
+    background: $brand-primary;
+    color: $white;
+
+    td {
+      border-right-color: $white;
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $white;
+  }
+
+  td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid $gray-light;
+    border-right: 1px solid $gray-light;
+  }
+}

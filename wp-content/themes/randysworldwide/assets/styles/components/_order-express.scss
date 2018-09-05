@@ -1,0 +1,71 @@
+#order-express-holder {
+  background-color: $white;
+  border: 1px solid $gray;
+  font-size: x-small;
+  margin: 0;
+  padding: 0;
+}
+
+#order-express-header {
+  background-color: $gray-lightest;
+  margin-left: 0;
+  padding: 0;
+
+  div {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+#order-express-added-to-cart,
+#order-express-adding-to-cart {
+  margin: 0;
+  padding: 5px 0;
+
+  input {
+    padding: 5px;
+    font-size: small;
+    width: 100%;
+  }
+}
+
+#lookup-spinner {
+  font-size: medium;
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  display: none;
+}
+
+#adding-product-description {
+  line-height: 1.4;
+  display: inline-block;
+}
+
+#adding-product-added-to-whishlist,
+#adding-product-adding-to-whishlist {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+#button-add-product {
+  height: 28px;
+  padding-top: 8px;
+  display: none;
+  color: $white;
+}

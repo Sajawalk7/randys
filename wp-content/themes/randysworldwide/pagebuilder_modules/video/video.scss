@@ -1,0 +1,14 @@
+.video-section {
+  .inline-video {
+    &__icon {
+      transform: translate(-40%,-40%);
+    }
+
+    &:hover,
+    &:focus {
+      .inline-video__icon {
+        transform: translate(-40%,-40%) scale(1.1);
+      }
+    }
+  }
+}

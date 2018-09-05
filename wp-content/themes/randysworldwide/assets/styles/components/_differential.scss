@@ -1,0 +1,40 @@
+.diff-section-title {
+  color: $gray-darkest;
+  @extend .h4;
+}
+
+.diff {
+  &__image {
+    padding-left: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include make-col(12);
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+    }
+
+    img {
+      margin: 0 auto;
+      @extend .img-fluid;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+  }
+
+  &__summary {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include make-col(12);
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(9);
+    }
+
+    p {
+      @extend .sm;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.woocommerce {
+  .woocommerce-MyAccount-content {
+    .order {
+      margin-bottom: 15px;
+      font-size: 12px;
+
+      @include media-breakpoint-up(sm) {
+        font-size: inherit;
+      }
+
+      &--header {
+        font-weight: 700;
+      }
+
+      &__id,
+      &__date,
+      &__status {
+        padding-top: 10px;
+      }
+
+      &__total {
+        padding-top: 7px;
+      }
+    }
+  }
+}
+
+.woocommerce-account.woocommerce-view-order {
+  .shop_table tr.order_item {
+    border-bottom: 0;
+    border-top: 0;
+
+    &:last-child {
+      border-bottom: 1px solid $gray-light;
+    }
+
+    &.border-top {
+      border-top: 1px solid $gray-light;
+    }
+
+    .warehouse {
+      display: block;
+    }
+  }
+}

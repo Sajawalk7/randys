@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="118px" viewBox="0 0 118 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Play-CTA</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="47" cy="47" r="47"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="94" height="94" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="01-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HP---1200" transform="translate(-324.000000, -1738.000000)">
+            <g id="03-Resource-Center" transform="translate(-147.000000, 603.000000)">
+                <g id="Promos" transform="translate(0.000000, 952.000000)">
+                    <g id="Large-Module-01" transform="translate(246.000000, 32.000000)">
+                        <g id="Play-CTA" transform="translate(225.000000, 151.000000)">
+                            <use id="Oval-5" stroke="#F06022" mask="url(#mask-2)" stroke-width="10" fill-opacity="0.810000002" fill="#1D1D1D" xlink:href="#path-1"></use>
+                            <path d="M24.0637474,39.8054226 C22.8916192,38.6332944 23.2568952,37.4006155 24.8746453,37.0532244 L57.5674512,30.0328617 C58.6468622,29.8010719 59.3342981,30.4867934 59.1022053,31.5676158 L52.0818426,64.2604216 C51.7339737,65.8803964 50.5035249,66.2452 49.3296444,65.0713195 L24.0637474,39.8054226 Z" id="Rectangle-10" fill="#FFFFFF" transform="translate(41.262049, 47.873727) rotate(-315.000000) translate(-41.262049, -47.873727) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

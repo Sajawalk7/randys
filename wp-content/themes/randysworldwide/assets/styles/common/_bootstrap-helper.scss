@@ -1,0 +1,66 @@
+/**
+* This version of Sage utlizes Bootstrap 4 Alpha (https://github.com/twbs/bootstrap/releases/tag/v4.0.0-alpha.4)
+*
+* This version does not include many of the helper classes for the lasest release
+* The purpose of this file is to include missing helper classes
+**/
+
+.text-right {
+  text-align: right;
+}
+
+.float-left {
+  @include float-left;
+}
+
+.float-right {
+  @include float-right;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  align-items: center !important;
+}
+
+.align-self-end {
+  align-self: flex-end !important;
+}
+
+.align-self-center {
+  align-self: center !important;
+}
+
+.mr-md-0 {
+  @include media-breakpoint-up(md) {
+    margin-right: 0;
+  }
+}
+
+.ml-md-0 {
+  @include media-breakpoint-up(md) {
+    margin-left: 0;
+  }
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.d-flex {
+  display: flex;
+}

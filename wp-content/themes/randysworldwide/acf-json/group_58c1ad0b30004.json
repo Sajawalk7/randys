@@ -1,0 +1,68 @@
+{
+    "key": "group_58c1ad0b30004",
+    "title": "Products",
+    "fields": [
+        {
+            "key": "field_58c1ad1dd6027",
+            "label": "Related",
+            "name": "related",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": [],
+            "min": "",
+            "max": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "return_format": "id"
+        },
+        {
+            "key": "field_5adb14bc9370b",
+            "label": "Product ID",
+            "name": "product_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "related-videos"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Relates a related video to a list of products.",
+    "modified": 1524307150
+}

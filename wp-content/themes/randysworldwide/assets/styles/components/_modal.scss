@@ -1,0 +1,41 @@
+.modal {
+
+  .modal-dialog,
+  &.in .modal-dialog {
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  .modal-body {
+    padding: 0;
+    background-color: $white;
+    line-height: 0;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    height: 42px;
+    width: 42px;
+    border-radius: 100%;
+    z-index: 1; // Place above modal
+    font-size: 42px;
+    line-height: 1em;
+    text-align: center;
+    color: $white;
+    background: $brand-primary;
+    transition: 0.3s background;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: darken($brand-primary, 10%);
+    }
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: 0;
+  }
+}

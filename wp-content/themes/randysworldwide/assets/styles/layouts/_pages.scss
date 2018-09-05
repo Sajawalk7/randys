@@ -1,0 +1,82 @@
+.section {
+  padding: 50px 0;
+  background-color: $white;
+
+  &--tan {
+    background-color: $gray-lightest;
+  }
+
+  &--purple {
+    background-color: $purple;
+    color: $white;
+  }
+
+  &--rust {
+    background-color: $rust;
+    color: $white;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--sm {
+    padding: 20px 0;
+  }
+
+  &--lg-top {
+    padding: 125px 0 80px;
+  }
+
+  &--triangle-top {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -1px;
+      height: 1px;
+      width: 100%;
+      background-color: $gray-lightest;
+      content: '';
+    }
+
+    > .container {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: -40px;
+        left: 90px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid $gray-lightest;
+        content: '';
+      }
+
+    }
+  }
+
+  &--texture-bg {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.1;
+      background-image: url('../images/blue-print.svg');
+      background-size: contain;
+      content: '';
+
+      @include media-breakpoint-up(md) {
+        background-size: cover;
+      }
+    }
+  }
+
+  &--divider {
+    border-bottom: 1px solid $gray-light;
+  }
+}

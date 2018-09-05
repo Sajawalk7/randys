@@ -1,0 +1,136 @@
+.woocommerce-Reviews,
+.comment-respond {
+  padding-top: 40px;
+  border-top: 1px solid $gray-lighter;
+}
+
+.woocommerce-Reviews-title {
+  @extend .h3;
+  text-transform: none;
+}
+
+.comment-form-rating {
+  display: inline-block;
+
+  .stars {
+    a {
+      display: inline-block;
+      position: relative;
+      width: 1.3em;
+      text-indent: -999em;
+      margin-right: 1px;
+
+      &::before {
+        content: '\f005';
+        font-family: FontAwesome;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        text-indent: 0;
+        font-size: 1.3em;
+        color: $gray;
+      }
+    }
+
+    a:hover~a::before {
+      color: $gray;
+    }
+
+    &:hover {
+      a::before {
+        color: $brand-primary;
+      }
+    }
+
+    &.selected {
+      a:not(.active) {
+        &::before {
+          color: $brand-primary;
+        }
+      }
+
+      a.active {
+        &::before {
+          color: $brand-primary;
+        }
+
+        ~a::before {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+.comment-form {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @extend .input;
+  }
+
+  input[type="submit"] {
+    @extend .button;
+  }
+}
+
+.commentlist {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 60px;
+
+  .comment {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: $gray-lightest;
+    border-radius: 2px;
+
+    img {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      border-radius: 2px;
+    }
+
+    .star-rating {
+      overflow: hidden;
+      position: relative;
+      line-height: 1;
+      font-size: 1.3em;
+      width: 5.1em;
+      font-weight: 400;
+      height: 1em;
+
+      &::before,
+      span::before {
+        content: '\f005\f005\f005\f005\f005';
+        font-family: FontAwesome;
+        letter-spacing: 0.1em;
+        color: $gray;
+      }
+
+      span {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+
+        &::before {
+          position: absolute;
+          top: 1px;
+          color: $brand-primary;
+        }
+      }
+    }
+
+    .description {
+      clear: both;
+    }
+  }
+}

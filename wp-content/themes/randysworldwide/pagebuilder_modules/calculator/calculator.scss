@@ -1,0 +1,163 @@
+.calculator {
+  $block: #{&};
+  margin: 30px 0;
+  border: 1px solid $gray-light;
+  border-radius: 2px;
+
+  // Form Group Style
+
+  &__form-group {
+    margin: 0 15px;
+    padding: 0;
+
+    @include media-breakpoint-down(md) {
+      margin: 15px 0;
+      text-align: center;
+    }
+  }
+
+  // Radio Button Style
+
+  &__radio-group {
+    height: 50px;
+  }
+
+  &__radio-label {
+    position: relative;
+    display: inline;
+    padding-left: 1.5rem;
+    cursor: pointer;
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked {
+        ~ #{$block}__radio-indicator {
+          background-color: $white;
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$brand-primary}'/%3E%3C/svg%3E");
+        }
+      }
+    }
+  }
+
+  &__radio-indicator {
+    position: absolute;
+    top: .0625rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 90% 90%;
+    border: 1px solid $gray-light;
+    color: #fff;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  // Input & Button Style
+
+  input {
+    @include media-breakpoint-down(md) {
+      margin: 0 auto;
+    }
+  }
+
+  .button {
+    padding: 15px 30px;
+  }
+
+  // Input Group
+
+  &__input {
+    position: relative;
+    padding: 30px 20px;
+    border-bottom: 1px solid $gray-light;
+    background-color: $gray-lightest;
+    text-align: left;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: flex-end;
+    }
+
+    &::before {
+      @include center-horizontal();
+      content: '';
+      bottom: -25px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 27.5px 0;
+      border-color: $gray-light transparent transparent;
+    }
+
+    &::after {
+      @include center-horizontal();
+      content: '';
+      bottom: -24px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 27.5px 0;
+      border-color: $gray-lightest transparent transparent;
+    }
+
+    input[type='number'] {
+      height: 50px;
+      width: 100px;
+      background-color: $white;
+      text-align: center;
+      text-indent: 0.75rem; // (same as padding) needed for true centering
+
+      @include media-breakpoint-up(lg) {
+        width: 120px;
+      }
+    }
+  }
+
+  // Output Group
+
+  &__output {
+    @include clear-fix();
+    padding: 60px 0 15px;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: center;
+    }
+
+    label {
+      display: block;
+      text-align: center;
+    }
+
+    input[readonly] {
+      height: 60px;
+      width: 180px;
+      background-color: $gray-lightest;
+      text-align: center;
+    }
+  }
+
+  // Error Message
+
+  &__error {
+    height: 30px;
+    margin: 0 0 15px;
+    text-align: center;
+  }
+}

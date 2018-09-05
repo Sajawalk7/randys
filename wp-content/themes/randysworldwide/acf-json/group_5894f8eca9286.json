@@ -1,0 +1,85 @@
+{
+    "key": "group_5894f8eca9286",
+    "title": "Glossary",
+    "fields": [
+        {
+            "sub_fields": [
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5894f9cfa60c6",
+                    "label": "Letter",
+                    "name": "letter",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "default_value": "",
+                    "delay": 0,
+                    "key": "field_5894f9daa60c7",
+                    "label": "Terms",
+                    "name": "terms",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Letter",
+            "collapsed": "",
+            "key": "field_5894f90ca60c5",
+            "label": "Letter",
+            "name": "letter",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-glossary.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1486158335
+}

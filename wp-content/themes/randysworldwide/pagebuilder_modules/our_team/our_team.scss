@@ -1,0 +1,11 @@
+.our-team {
+  .team-member {
+    margin: 10px 0 30px;
+    text-align: center;
+
+    &__image {
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+  }
+}
